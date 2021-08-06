@@ -1,0 +1,100 @@
+#blog::-webkit-scrollbar {
+    display: none;
+}
+
+#blog {
+    height: 95%;
+    min-height: 95%;
+    width: 60%;
+    margin: auto;
+    color: black;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* overflow: scroll;
+    scroll-behavior: smooth; */
+}
+
+.share {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+#blogImageContainer {
+    width: 90%;
+    margin: auto;
+}
+
+#blogImage {
+    height: 30rem;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    width: 100%;
+    background-size: contain;
+    background-position: center center;
+
+}
+
+/* #blogContext {
+    background-color: transparent;
+    border: none;
+    font-size: x-large;
+    padding: .5rem;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+} */
+
+#blogContext {
+    white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+    white-space: -pre-wrap; /* Opera */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+    height: -moz-min-content;
+	height: -webkit-min-content;
+	height: min-content;
+}
+
+
+#blogTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#blogTitle > img {
+    justify-self: center;
+    align-self: center;
+}
+
+
+@media screen and (max-width:1000px) {
+    #blog {
+        width: 95%;
+    }
+}
+
+.scrollDown {
+    position: sticky;
+    font-size: 30px;
+    color: rgb(155, 59, 35);
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: 1rem;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    padding: .5rem;
+}
